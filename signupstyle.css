@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+}
+* {box-sizing: border-box;}
+
+.nav-logo {
+    width: 80px;
+    object-fit: contain;
+  }
+  
+.nav-link ul{
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+  
+.nav-link li{
+    list-style: none;
+}
+  
+.nav-link li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+  
+.nav-link li a:hover{
+    color: #0dce53;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    background-color: #111;
+    opacity: 72%;
+    overflow: hidden;
+}
+  
+.nav-black {
+    background-color: #111111;
+}
+  
+.sub-nav {
+    grid-area: sb;
+    padding: 0;
+}
+  
+.sub-nav a {
+    display:inline-table;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+  
+.sub-nav a:hover {
+    color: #0dce53;
+}
+
+input[type=text], input[type=password], input[type=date], select[name=gender]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #c3cec7;
+  border-radius: 5vw;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #c3cec7;
+  outline: none;
+}
+
+button {
+  background-color: #13460E;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5vw;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+    background-color: #0dce53;
+}
+
+.signupbtn {
+  float: left;
+  width: 100%;
+}
+
+.container {
+    color: #ddd;
+  padding: 16px;
+}
+
+.submit::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 768px) {
+  .signupbtn {
+     width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+      padding: 10px;
+    }
+  
+    .nav-link {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      background-color: #111;
+      width: 200px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  
+    .nav-link ul {
+      flex-direction: column;
+    }
+  
+    .nav-link li {
+      margin-bottom: 10px;
+    }
+  
+    .nav-link li a {
+      display: block;
+      padding: 8px;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+  
+    .nav-link li a:hover {
+      color: #0dce53;
+    }
+  
+    .nav-link.active {
+      display: block;
+    }
+  }
+  
+  .toggle-button {
+    display: none;
+    position: absolute;
+    top: 1.25 rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+  
+  .toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .toggle-button {
+      display: flex;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 50%;
+      margin-top: -10.5px;
+    }
+    .nav {
+      flex-direction:row;
+      align-items: flex-start;
+  }
+  
+  .nav-link {
+      display: none;
+      width: 100%;
+  }
+  
+  .nav-link ul {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+    background-color: #000000;
+    overflow: hidden;
+      flex-direction: column;
+  }
+  
+  .nav-link li {
+      text-align: center;
+      border-top: 1px solid white;
+  }
+  
+  .nav-link-mobile {
+      display: block;
+  }
+  
+  .nav-link-mobile li:active {
+      background-color: #555555;
+  }
+}
