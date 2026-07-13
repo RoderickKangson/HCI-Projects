@@ -10,26 +10,28 @@ window.addEventListener('scroll', () => {
 
 const toggleBtn = document.querySelector(".toggle-button");
 const navbarLinks = document.querySelector(".nav-link");
-      
-toggleBtn.addEventListener("click", () => {
-navbarLinks.classList.toggle("nav-link-mobile");
-});
+
+if (toggleBtn && navbarLinks) {
+  toggleBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    navbarLinks.classList.toggle("nav-link-mobile");
+  });
+}
 
 function validateForm(event) {
   event.preventDefault();
 
-  var email = document.getElementById('email').value;
-  var password = document.getElementById('password').value;
-  var confirm = document.getElementById('confirm').value;
-
-  var errorMessages = [];
+  const email = document.getElementById('email')?.value.trim() || '';
+  const password = document.getElementById('password')?.value || '';
+  const confirm = document.getElementById('confirm')?.value || '';
+  const errorMessages = [];
 
   if (email === "") {
     errorMessages.push("Email must be filled out");
   }
 
-  if (!email.endsWith("@gmail.com")) {
-    errorMessages.push("Invalid email, must end with @gmail.com");
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    errorMessages.push("Please enter a valid email address");
   }
 
   if (password === "") {
@@ -49,5 +51,5 @@ function validateForm(event) {
     return false;
   }
 
-  document.getElementById('Forms').submit();
+  document.getElementById('Forms')?.submit();
 }

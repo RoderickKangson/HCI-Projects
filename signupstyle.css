@@ -163,10 +163,7 @@ button:hover {
   .toggle-button {
     display: none;
     position: absolute;
-    top: 1.25 rem;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
+  top: 1.25rem;
     height: 21px;
   }
   

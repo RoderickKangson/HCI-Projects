@@ -8,11 +8,11 @@
     integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" 
     crossorigin="anonymous"></script>
     <title>JeTFlix (New & Popular)</title>
-    <link rel="stylesheet" href="./moviestyle.css"/>
+    <link rel="stylesheet" href="./style.css"/>
   </head>
   <body>
     <div class="nav">
-      <img class="nav-logo" src="./JPG/Logo/JeTFlix.png" alt="" />
+      <img class="nav-logo" src="./JPG/Logo/JeTFlix.png" alt="JeTFlix logo" />
       <div class="nav-link">
         <ul>
           <li><a href="./homepage(aftersignup).html">Home</a></li>
@@ -22,63 +22,86 @@
           <li><a href="#">My List</a></li>
         </ul>
       </div>
-      <a href="#" class="toggle-button">
+      <a href="#" class="toggle-button" aria-label="Toggle navigation">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
       </a>
-      </nav>
       <nav class="sub-nav">
         <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
         <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
-        <a href="#"><img src="./JPG/Assets/troll-face 1.png"></a>        
-      </nav>      
+        <a href="#"><img src="./JPG/Assets/troll-face 1.png" alt="Profile" /></a>
+      </nav>
     </div>
-    
+
     <header class="banner">
-        <div class="content">
-          <h1 class="title">The Spongebob Movie:
-            <br>Sponge Out Of Water
-          </h1>
-          
-          <h1 class="desc">
-            2015 | 7+ | 1h 32m | Comedy Adventure
-            <br><br>
-            When a diabolical pirate above the sea steals the secret 
-            Krabby Patty formula, SpongeBob and his nemesis 
-            Plankton must team up in order to get it back.
-            <br><br>
-            Starring: Tom Kenny, Antonio Banderas, and Bill Fagerbakke 
-            <div class="buttons">
-              <button class="button">Play</button>
-              <button class="button">Download</button>
-            </div>
-          </h1>
+      <div class="content">
+        <span class="eyebrow">What's arriving next</span>
+        <h1 class="title">A sharper view of what’s new and worth watching.</h1>
+        <div class="desc">
+          Discover fresh arrivals, cult favorites, and standout stories arranged like an editorial calendar for curious viewers.
         </div>
-        <div class="bottom"></div>
-      </header>
-
-    <div class="row">
-      <h2>New on JeTFlix</h2>
-      <div class="posters">
-        <img class="poster poster-large" src="./JPG/Movies/download.jpeg" alt="" />
-        <img class="poster poster-large" src="./JPG/Movies/Larva-Family-2023-Watch-Online-On-Netflix.jpg" alt="" />
-        <img class="poster poster-large" src="./JPG/Movies/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg" alt="" />
-        <img class="poster poster-large" src="./JPG/Movies/download (2).jpeg" alt="" />
-        <img class="poster poster-large" src="./JPG/Movies/689e2efcf9f192ba6c0f7a538ee99027.jpe" alt="" />
+        <div class="buttons">
+          <button class="button primary">Play</button>
+          <button class="button secondary">Browse Picks</button>
+        </div>
       </div>
-    </div>
+    </header>
 
-    <div class="row">
-      <h2>Top 5 Movies</h2>
-      <div class="posters">
-        <img class="poster poster-large" src="./JPG/Movies/160505-the-spongebob-movie-sponge-out-of-water-0-230-0-345-crop.jpg" alt="" />
-        <img class="poster poster-large" src="./JPG/Movies/689e2efcf9f192ba6c0f7a538ee99027.jpe" alt="" />
-        <img class="poster poster-large" src="./JPG/Movies/1-9441893422.jpg" alt="" />
-        <img class="poster poster-large" src="./JPG/Movies/MV5BODRmZDVmNzUtZDA4ZC00NjhkLWI2M2UtN2M0ZDIzNDcxYThjL2ltYWdlXkEyXkFqcGdeQXVyNTk0MzMzODA@._V1_FMjpg_UX1000_.jpg" alt="" />
-        <img class="poster poster-large" src="./JPG/Movies/s.jpeg" alt="" />
-      </div>
-    </div>
+    <main class="page-shell">
+      <section class="split-section">
+        <div class="split-copy">
+          <span class="eyebrow">Trending now</span>
+          <h2>See what’s next before it becomes obvious.</h2>
+          <p>These picks are presented with motion, spacing, and visual rhythm to feel more like a curated experience than a simple list.</p>
+        </div>
+        <div class="split-visual"></div>
+      </section>
+
+      <section class="row">
+        <h2>New on JeTFlix</h2>
+        <div class="posters">
+          <article class="poster-card">
+            <img src="https://images.unsplash.com/photo-1517602302552-471fe67acf66?auto=format&fit=crop&w=900&q=80" alt="A futuristic release poster" />
+            <div class="poster-info"><h3>Nova State</h3><p>Science fiction · 2025</p></div>
+          </article>
+          <article class="poster-card">
+            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80" alt="A drama release poster" />
+            <div class="poster-info"><h3>Silent Current</h3><p>Drama · 2024</p></div>
+          </article>
+          <article class="poster-card">
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80" alt="A stylish release poster" />
+            <div class="poster-info"><h3>Open Frame</h3><p>Documentary · 2024</p></div>
+          </article>
+          <article class="poster-card">
+            <img src="https://images.unsplash.com/photo-1517602302552-471fe67acf66?auto=format&fit=crop&w=900&q=80" alt="An experimental release poster" />
+            <div class="poster-info"><h3>Afterglow</h3><p>Adventure · 2023</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="row">
+        <h2>Top 5 Movies</h2>
+        <div class="posters">
+          <article class="poster-card">
+            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80" alt="A top rated cinematic artwork" />
+            <div class="poster-info"><h3>Rift</h3><p>Thriller · 2023</p></div>
+          </article>
+          <article class="poster-card">
+            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80" alt="Another top rated cinematic artwork" />
+            <div class="poster-info"><h3>Last Light</h3><p>Drama · 2022</p></div>
+          </article>
+          <article class="poster-card">
+            <img src="https://images.unsplash.com/photo-1517602302552-471fe67acf66?auto=format&fit=crop&w=900&q=80" alt="One more top rated cinematic artwork" />
+            <div class="poster-info"><h3>Static Bloom</h3><p>Fantasy · 2024</p></div>
+          </article>
+          <article class="poster-card">
+            <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80" alt="A featured top rated poster" />
+            <div class="poster-info"><h3>Northline</h3><p>Adventure · 2021</p></div>
+          </article>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="container">
@@ -116,7 +139,7 @@
           </div>
         </div>
       </div>
-   </footer>
- <script src="./script.js"></script>
+    </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

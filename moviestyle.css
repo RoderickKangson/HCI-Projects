@@ -263,15 +263,16 @@ ul{
 }
 
 @media(max-width: 768px){
-  .footer-col{
+  .column{
     width: 50%;
     margin-bottom: 30px;
+  }
 }
-}
+
 @media(max-width: 768px){
-  .footer-col{
+  .column{
     width: 100%;
-}
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -318,7 +319,7 @@ ul{
 .toggle-button {
   display: none;
   position: absolute;
-  top: 1.25 rem;
+  top: 1.25rem;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
